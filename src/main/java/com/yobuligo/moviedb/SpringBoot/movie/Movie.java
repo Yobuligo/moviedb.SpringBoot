@@ -12,6 +12,8 @@ public class Movie implements IEntity {
     private Integer length;
     private String genre;
 
+    public Movie(){}
+
     public Movie(Integer id, String title, Integer year, Integer length, String genre) {
         this.id = id;
         this.title = title;
