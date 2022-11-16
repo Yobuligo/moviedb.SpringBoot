@@ -8,11 +8,11 @@ import com.yobuligo.moviedb.SpringBoot.core.IEntity;
 public class Movie implements IEntity {
     private Integer id;
     private String title;
-    private Short year;
-    private Short length;
+    private Integer year;
+    private Integer length;
     private String genre;
 
-    public Movie(Integer id, String title, Short year, Short length, String genre) {
+    public Movie(Integer id, String title, Integer year, Integer length, String genre) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -36,19 +36,19 @@ public class Movie implements IEntity {
         this.title = title;
     }
 
-    public Short getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(Short year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 
-    public Short getLength() {
+    public Integer getLength() {
         return length;
     }
 
-    public void setLength(Short length) {
+    public void setLength(Integer length) {
         this.length = length;
     }
 

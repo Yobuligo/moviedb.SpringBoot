@@ -3,8 +3,11 @@ package com.yobuligo.moviedb.SpringBoot.movie;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.yobuligo.moviedb.SpringBoot.core.IEntityService;
 
+@Service
 public class MovieService implements IEntityService<Movie> {
     private ArrayList<Movie> movies = new ArrayList<>();
 
